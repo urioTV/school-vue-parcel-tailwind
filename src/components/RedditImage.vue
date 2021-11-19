@@ -22,11 +22,11 @@ export default {
                 document.getElementById('subImage').remove()
                 //this.image = ''
             }
-            axios.get(`http://0.0.0.0:2137/reddit/${this.subName}`)
-            .then(res => {
-                this.image = res.data
-                })
-            .catch(err => {e => console.log(err)})
+            this.image = axios.get(`http://0.0.0.0:2137/reddit/${this.subName}`).data
+            // .then(res => {
+            //     this.image = res.data
+            //     })
+            // .catch(err => {e => console.log(err)})
             console.log(this.image)
             if(this.image === '') this.image = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FC398ly2Pekg%2Fmaxresdefault.jpg&f=1&nofb=1'
             var img = document.createElement('img')
