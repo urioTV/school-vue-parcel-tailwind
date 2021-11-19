@@ -1,8 +1,8 @@
 // src/App.vue
 
 <template>
-  <div class="container bg-gray-100 w-screen h-screen mx-auto">
-    <h1 id="Hello" class="text-center mx-auto"> Random <b class="Reddit-font">Reddit</b> images</h1>
+  <div class="container bg-gray-100 w-screen h-screen mx-auto Reddit">
+    <h1 id="Hello" class="text-center mx-auto"> Random <b class="Reddit-color">Reddit</b> images</h1>
     <RedditImage />
   </div>
 </template>
